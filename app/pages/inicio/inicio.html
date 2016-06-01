@@ -18,10 +18,10 @@
     </ion-buttons>
 </ion-toolbar>
 
-<ion-content>
+<ion-content class="background">
     <ion-slides speed='100' pager style="height:150px;">
 
-        <ion-slide style="background-color:red">
+        <ion-slide style="background: url('../../assets/img/logo.png')">
             <h2>Slide 1</h2>
         </ion-slide>
 
@@ -30,6 +30,16 @@
         </ion-slide>
 
     </ion-slides>
+
+    <button class="button button-light">
+        button-light
+    </button>
+
+    <button class="button">
+        <i class="icon ion-loading-c"></i> Loading...
+    </button>
+
+    <button class="button icon-left ion-home">Home</button>
 
     <ion-navbar>
         <ion-buttons start>
