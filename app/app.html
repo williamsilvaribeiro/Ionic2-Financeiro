@@ -1,0 +1,15 @@
+<ion-menu [content]="conteudo">
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(home)" menuClose><ion-icon name="home"></ion-icon>   Inicio</button>
+      <button ion-item (click)="openPage(contas)" menuClose><ion-icon name="shuffle"></ion-icon>   Reservas</button>
+      <button ion-item (click)="openPage(contas)" menuClose><ion-icon name="car"></ion-icon>   Mudanças</button>
+      <button ion-item (click)="openPage(contas)" menuClose><ion-icon name="car"></ion-icon>   Ocorrências</button>
+      <button ion-item (click)="openPage(contas)" menuClose><ion-icon name="hammer"></ion-icon>   Falar Sindico</button>
+      <button ion-item (click)="openPage(contas)" menuClose><ion-icon name="podium"></ion-icon>   Financeiro</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="raiz" #conteudo></ion-nav>
